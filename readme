@@ -1,0 +1,12 @@
+# create layout
+- create empty solution with dotnet nwe sln -n <yourname>
+- create web api with dotnet new webapi -n <yourname>
+- create classlib with dotnet new classlib -n <yourname>.Application
+- create classlib with dotnet new classlib -n <yourname>.Domain
+- create classlib with dotnet new classlib -n <yourname>.Persistence
+
+# add dependensicy in sln 
+- dotnet sln add API
+- dotnet sln add Application
+- dotnet sln add Domain
+- dotnet sln add Persistence
