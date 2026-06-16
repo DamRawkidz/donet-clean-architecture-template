@@ -5,8 +5,14 @@
 - create classlib with dotnet new classlib -n <yourname>.Domain
 - create classlib with dotnet new classlib -n <yourname>.Persistence
 
-# add dependensicy in sln 
-- dotnet sln add API
-- dotnet sln add Application
-- dotnet sln add Domain
-- dotnet sln add Persistence
+# add refference
+- API add Application
+- Application add domain and persistence
+- skip Domain
+- Persistence add domain
+
+
+# update db 
+- dotnet ef migrations add InitiaCreate -p Persistence -s API
+- dotnet ef database update InitiaCreate -p Persistence -s API
+- dotnet ef migrations  remove -p Persistence -s API
