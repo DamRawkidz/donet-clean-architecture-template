@@ -1,5 +1,5 @@
 namespace Domain;
-public class Activity
+public class Activity: base_table
 {
     public Guid? id { get; set; } = Guid.NewGuid();
      public required string? Title { get; set; }

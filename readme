@@ -15,4 +15,4 @@
 # update db 
 - dotnet ef migrations add InitiaCreate -p Persistence -s API
 - dotnet ef database update InitiaCreate -p Persistence -s API
-- dotnet ef migrations  remove -p Persistence -s API
+- dotnet ef database drop -p Persistence -s API
